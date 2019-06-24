@@ -17,7 +17,7 @@ while(True):
         nxt = driver.find_element_by_link_text('下一页')
         nxt.click()
     except:
-        breake
+        break
         # NoSuchElementException                    
         
 
