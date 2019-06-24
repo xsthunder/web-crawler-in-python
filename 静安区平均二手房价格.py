@@ -9,7 +9,7 @@ driver.get("https://sh.lianjia.com/ershoufang/jingan/")
 
 
 ret = []
-while(nxt!=None):
+while(True):
     price_eles = driver.find_elements_by_class_name('totalPrice')
     for ele in price_eles:
         ret.append(ele.text)
@@ -17,7 +17,7 @@ while(nxt!=None):
         nxt = driver.find_element_by_link_text('下一页')
         nxt.click()
     except:
-        nxt = None
+        breake
         # NoSuchElementException                    
         
 
