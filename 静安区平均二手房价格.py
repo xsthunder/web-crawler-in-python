@@ -29,5 +29,5 @@ for x in ret:
     nxt_ret.append(float(x[:-1]))
 
 
-sum(nxt_ret)/len(nxt_ret)
+print(sum(nxt_ret)/len(nxt_ret))
 
